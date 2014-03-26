@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tai Chi Reel</title>
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link href='indexstyles.css' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+	$(window).scroll(function () {
+		var ttop = $('#wrapper').position().top;
+		var hcltb = $('#wrapper').height();
+		var mtop = $(window).scrollTop();
+		if(mtop > ttop) {
+ 			if (mtop < (ttop+hcltb-400))
+				{ $('#main').css('top', (mtop-ttop+50));}
+		}
+	});
+	$(window).scroll(function () {
+		var ttop = $('#tempDiv').position().left;
+		var hcltb = $('#tempDiv').width();
+		var mtop = $(window).scrollLeft();
+		if(mtop > ttop) {
+ 			if (mtop < (ttop+hcltb-400))
+				{ $('#linksDiv').css('left', (mtop-ttop+50));}
+		}
+	});
+</script>
+</head>
+<body>
+<div id="header">
+<h1><a href="index.html">Tai Chi Reel</a></h1>
+
+<ul id="links-list">
+
+<li><a href="index2.html">49 Sword</a></li>
+<li><a href="index3.html" class="selectedTab">22 Chen Style</a></li>
+<li><a href="index4.html">36 Chen Style</a></li>
+
+
+</ul>
+</div> <!-- end div header -->
+<div id="wrapper">
+<div id="main">
+<br>
+<h2>22 Step Chen Style Form</h2>
+<br>
+<h3>Video 1:</h3>
+<br>
+<iframe width="620" height="415" src="http://www.youtube.com/embed/sdnPk3au2qI" frameborder="0" allowfullscreen></iframe>
+<br><br>
+
+
+
+</div> <!-- end div main -->
+<div id="sidebar">
+
+Pique your interest? Learn tai chi at <a href="http://www.wushukungfunj.com/">Wu Shu Kung Fu Fitness Center</a> or a school near you.
+
+</div> <!-- end div sidebar -->
+
+</div> <!-- end div wrapper -->
+
+</body>
+</html>

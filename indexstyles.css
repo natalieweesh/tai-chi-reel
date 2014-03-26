@@ -1,0 +1,187 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,b,i,small,strong,sub,sup,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,button,textarea,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,menu,time,mark,audio,video,a{margin:0;padding:0;border:0;outline:0;font-size:100%;font-weight:inherit;font-style:inherit;font-family:inherit;vertical-align:baseline;background:transparent;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html,body{height:100%}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+html{overflow-y:scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}
+body{background:#ffffff; min-width:320px;}
+body,button,input,select,textarea{font-family:"Julius Sans One", sans-serif;font-size:24px;line-height:1;color:#222}
+body {
+	background-color: #EDFFE3;
+}
+h1 {
+	font-size: 2em;
+	color: #ffffff;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+#header {
+	background-color: #AED6A9;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+}
+
+
+#sidebar{
+	font-size: .8em;
+	padding: .5em 0;
+	float: right;
+	background-color: #AED6A9;
+	position: relative;
+	bottom: 0;
+}
+
+#main{
+	background-color: #EDFFE3;	
+	padding-top: 120px;
+	text-align: center;
+}
+
+#wrapper {
+	/*padding: 50px 0 0 0;*/
+	width: 100%;
+	display: inline-block;
+	background-color: #AED6A9;
+	
+}
+#links-list {
+	float: right;
+	width: 100%;
+	text-align: right;
+	background-color: #AED6A9;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 3px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: right;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover {
+	color: #E3FF12;
+}
+p {
+	text-align: justify;
+}
+.selectedTab {
+	color: #E3FF12;
+}
+.minimized {
+	font-size: .8em;
+	color: green;
+}
+h2 {
+	line-height: 2em;
+}
+
+/* some media queries */
+@media screen and (max-width: 1090px) {
+  
+}
+@media screen and (max-width: 920px) {
+
+}
+@media screen and (max-width: 800px) {
+
+}
+@media screen and (max-width: 730px) {
+
+}
+/*------------------------------*/
+/* LESS than ipad */
+/*------------------------------*/
+
+@media screen and (max-width: 690px) {
+
+}
+
+@media screen and (max-width: 680px) {
+
+}
+
+/* iPad in portrait and landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	body{font-size: 2.5em;}
+}
+
+/* iPad in portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	#header {
+		height: 120px;
+	}
+	#main {
+		padding-top: 120px;
+	}
+	iframe {
+		width: 800px;
+		height: 515px;
+	}
+
+}
+
+/* iPad in landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	body{font-size: 2em;}
+	#header {
+		height: 100px;
+	}
+	#main {
+		padding-top: 100px;
+	}
+
+}
+
+/* iPhone 5 in portrait and landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+	body{font-size:4em;}
+
+}
+
+/* iPhone 5 in portrait  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+	h1 {
+		font-size: 1.5em;
+	}
+	#header {
+		height: 250px;
+	}
+
+	#main {
+		padding-top: 300px;
+	}
+	iframe {
+		width: 800px;
+		height: 515px;
+	}
+}
+
+/* iPhone 5 in landscape */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+	body{font-size:2.5em;}
+	h1 {
+		font-size: 1.5em;
+	}
+	#header {
+	
+		height: 100px;
+	}
+	#wrapper {
+		padding-top: 130px;
+	}
+
+}

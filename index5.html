@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tai Chi Reel</title>
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link href='indexstyles.css' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+	$(window).scroll(function () {
+		var ttop = $('#wrapper').position().top;
+		var hcltb = $('#wrapper').height();
+		var mtop = $(window).scrollTop();
+		if(mtop > ttop) {
+ 			if (mtop < (ttop+hcltb-400))
+				{ $('#main').css('top', (mtop-ttop+50));}
+		}
+	});
+	$(window).scroll(function () {
+		var ttop = $('#tempDiv').position().left;
+		var hcltb = $('#tempDiv').width();
+		var mtop = $(window).scrollLeft();
+		if(mtop > ttop) {
+ 			if (mtop < (ttop+hcltb-400))
+				{ $('#linksDiv').css('left', (mtop-ttop+50));}
+		}
+	});
+</script>
+</head>
+<body>
+<div id="header">
+<h1><a href="index.html">Tai Chi Reel</a></h1>
+
+<ul id="links-list">
+
+<li><a href="index2.html">49 Sword</a></li>
+<li><a href="index3.html">22 Chen Style</a></li>
+<li><a href="index4.html">36 Chen Style</a></li>
+
+
+</ul>
+</div> <!-- end div header -->
+<div id="wrapper">
+<div id="main">
+<br>
+<h2>36 Step Chen Style Form</h2>
+<br>
+<h3>Videos Coming Soon!</h3>
+<br>
+<br><br>
+
+
+
+</div> <!-- end div main -->
+<div id="sidebar" style="position: absolute;">
+Some useful info:
+
+if you want to learn tai chi and you live in the essex county of new jersey, check out this site
+
+if you blablabla blabla blablablab lablabla
+</div> <!-- end div sidebar -->
+
+</div> <!-- end div wrapper -->
+
+</body>
+</html>
